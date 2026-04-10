@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚡ NAN FALLING DOWN THE STAIRS 2010 EXTREME RGB!! ⚡</title>
+    <style>
+        /* Extreme 2010s RGB Neon Aesthetic */
+        @keyframes rgb-background {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes neon-text-glow {
+            0% { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff; color: #fff; }
+            33% { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00ffff, 0 0 40px #00ffff, 0 0 50px #00ffff; color: #fff; }
+            66% { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00; color: #fff; }
+            100% { text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff; color: #fff; }
+        }
+
+        @keyframes border-rainbow-glow {
+            0% { box-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000, inset 0 0 20px #ff0000; border-color: #ff0000; }
+            15% { box-shadow: 0 0 20px #ff7f00, 0 0 40px #ff7f00, inset 0 0 20px #ff7f00; border-color: #ff7f00; }
+            30% { box-shadow: 0 0 20px #ffff00, 0 0 40px #ffff00, inset 0 0 20px #ffff00; border-color: #ffff00; }
+            45% { box-shadow: 0 0 20px #00ff00, 0 0 40px #00ff00, inset 0 0 20px #00ff00; border-color: #00ff00; }
+            60% { box-shadow: 0 0 20px #0000ff, 0 0 40px #0000ff, inset 0 0 20px #0000ff; border-color: #0000ff; }
+            75% { box-shadow: 0 0 20px #4b0082, 0 0 40px #4b0082, inset 0 0 20px #4b0082; border-color: #4b0082; }
+            90% { box-shadow: 0 0 20px #8b00ff, 0 0 40px #8b00ff, inset 0 0 20px #8b00ff; border-color: #8b00ff; }
+            100% { box-shadow: 0 0 20px #ff0000, 0 0 40px #ff0000, inset 0 0 20px #ff0000; border-color: #ff0000; }
+        }
+
+        @keyframes cursor-pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: "Impact", "Comic Sans MS", sans-serif;
+            background: linear-gradient(124deg, #000000, #1a001a, #001a1a, #00001a);
+            background-size: 400% 400%;
+            animation: rgb-background 10s ease infinite;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            color: #fff;
+            cursor: pointer; /* encourages clicking for auto-unmute */
+        }
+
+        h1 {
+            font-size: 4rem;
+            text-transform: uppercase;
+            animation: neon-text-glow 1s infinite alternate;
+            margin: 0;
+            margin-bottom: 20px;
+            text-align: center;
+            letter-spacing: 3px;
+            z-index: 10;
+        }
+
+        .marquee-container {
+            width: 100%;
+            background: #000;
+            border-top: 4px solid #fff;
+            border-bottom: 4px solid #fff;
+            box-shadow: 0 0 30px #fff;
+            margin-bottom: 30px;
+            z-index: 10;
+        }
+
+        marquee {
+            font-size: 2.5rem;
+            font-family: "Comic Sans MS", cursive;
+            font-weight: bold;
+            color: #ffff00;
+            text-shadow: 0 0 15px #ffff00, 0 0 30px #ff0000;
+            padding: 10px 0;
+        }
+
+        .video-wrapper {
+            position: relative;
+            border: 15px solid #fff;
+            border-radius: 20px;
+            background: #000;
+            width: 85vw;
+            max-width: 1200px;
+            aspect-ratio: 16 / 9;
+            animation: border-rainbow-glow 2s infinite linear, cursor-pulse 1s infinite;
+            z-index: 10;
+        }
+
+        video, iframe {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+            object-fit: cover;
+            outline: none;
+            border: none;
+        }
+
+        .insane-rgb-overlay {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: repeating-linear-gradient(
+                45deg,
+                rgba(255,0,0,0.1),
+                rgba(255,0,0,0.1) 10px,
+                rgba(0,255,0,0.1) 10px,
+                rgba(0,255,0,0.1) 20px,
+                rgba(0,0,255,0.1) 20px,
+                rgba(0,0,255,0.1) 30px
+            );
+            background-size: 200% 200%;
+            animation: rgb-background 5s infinite linear;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .flashing-bg {
+            position: absolute;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0) 70%);
+            animation: neon-text-glow 0.3s infinite alternate;
+            pointer-events: none;
+            z-index: 0;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="insane-rgb-overlay"></div>
+    <div class="flashing-bg"></div>
+
+    <h1>⚡ NAN FALLING DOWN THE STAIRS ⚡</h1>
+
+    <div class="marquee-container">
+        <marquee scrollamount="25">😎 OMG SO FUNNY 😂 BEST FALL EVER!! 💯 THE MOST EPIC FAIL IN HD 1080P!! 🌈 RAINBOW NEON GLOW 🔥 LOLOLOLOL 😎</marquee>
+    </div>
+
+    <div class="video-wrapper">
+        <iframe 
+            src="https://www.youtube.com/embed/JLYQkmJNVTo?autoplay=1&loop=1&playlist=JLYQkmJNVTo&mute=1&controls=1" 
+            allow="autoplay; fullscreen; encrypted-media; picture-in-picture" 
+            allowfullscreen
+            referrerpolicy="strict-origin-when-cross-origin"
+            title="YouTube video player">
+        </iframe>
+    </div>
+</body>
+</html>
